@@ -15,7 +15,7 @@ class SpecSelect extends React.Component {
               options={this.props.features[feature]}
               feature={feature}
               selected={this.props.selected}
-              onChange={this.props.updateFeature}
+              updateFeature={this.props.updateFeature}
               />
             </fieldset>
            

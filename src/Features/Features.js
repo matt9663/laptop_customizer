@@ -15,7 +15,7 @@ class Feature extends React.Component {
                 selected={this.props.selected}
                 item={item}
                 {...item}                
-                onChange={this.props.onChange}      
+                updateFeature={this.props.updateFeature}      
                />
             )
         })

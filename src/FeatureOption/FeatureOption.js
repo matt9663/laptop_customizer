@@ -13,7 +13,7 @@ class FeatureOption extends React.Component {
                   id={this.props.id}
                   className="feature__option"
                   checked={this.props.name === this.props.selected[this.props.label].name}
-                  onChange={e => this.props.updateFeature(e.target.label, e.target.item)}
+                  onChange={e => this.props.updateFeature(this.props.label, this.props.item)}
                 />
                 <label htmlFor={this.props.id} className="feature__label">
                   {this.props.name} ({USCurrencyFormat.format(this.props.cost)})

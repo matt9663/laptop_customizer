@@ -9,7 +9,8 @@ class Feature extends React.Component {
             const itemHash = slugify(JSON.stringify(item));
             return (
               <FeatureOption 
-                key={itemHash}              
+                key={itemHash}
+                id={itemHash}              
                 className="feature__item" 
                 label={this.props.feature}
                 selected={this.props.selected}
